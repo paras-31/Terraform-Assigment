@@ -49,10 +49,12 @@ module "vpc" {
 ## Inputs
 
 
-Name	Description	Type	Default	Required
-project	Name of the project for resource tagging	string	N/A	Yes
-vpc_cidr	CIDR block for the VPC	string	N/A	Yes
-azs	List of availability zones	list	N/A	Yes
-enable_nat_gw	Toggle to enable/disable the NAT Gateway	bool	true	No
-enable_tgw	Option to integrate Transit Gateway	bool	false	No
+| Name          | Description                               | Type         | Default | Required |
+|---------------|-------------------------------------------|--------------|---------|----------|
+| `project`     | Name of the project for resource tagging   | string       | N/A     | Yes      |
+| `vpc_cidr`    | CIDR block for the VPC                    | string       | N/A     | Yes      |
+| `azs`         | List of availability zones                | list(string) | N/A     | Yes      |
+| `enable_nat_gw` | Toggle to enable/disable the NAT Gateway | bool         | true    | No       |
+| `enable_tgw`  | Option to integrate Transit Gateway       | bool         | false   | No       |
+
 
