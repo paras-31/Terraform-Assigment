@@ -48,48 +48,11 @@ module "vpc" {
 
 ## Inputs
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Type</th>
-    <th>Default</th>
-    <th>Required</th>
-  </tr>
-  <tr>
-    <td><code>project</code></td>
-    <td>Name of the project for resource tagging</td>
-    <td>string</td>
-    <td>N/A</td>
-    <td>Yes</td>
-  </tr>
-  <tr>
-    <td><code>vpc_cidr</code></td>
-    <td>CIDR block for the VPC</td>
-    <td>string</td>
-    <td>N/A</td>
-    <td>Yes</td>
-  </tr>
-  <tr>
-    <td><code>azs</code></td>
-    <td>List of availability zones</td>
-    <td>list(string)</td>
-    <td>N/A</td>
-    <td>Yes</td>
-  </tr>
-  <tr>
-    <td><code>enable_nat_gw</code></td>
-    <td>Toggle to enable/disable NAT Gateway</td>
-    <td>bool</td>
-    <td><code>true</code></td>
-    <td>No</td>
-  </tr>
-  <tr>
-    <td><code>enable_tgw</code></td>
-    <td>Option to integrate Transit Gateway</td>
-    <td>bool</td>
-    <td><code>false</code></td>
-    <td>No</td>
-  </tr>
-</table>
+
+Name	Description	Type	Default	Required
+project	Name of the project for resource tagging	string	N/A	Yes
+vpc_cidr	CIDR block for the VPC	string	N/A	Yes
+azs	List of availability zones	list	N/A	Yes
+enable_nat_gw	Toggle to enable/disable the NAT Gateway	bool	true	No
+enable_tgw	Option to integrate Transit Gateway	bool	false	No
 
