@@ -49,16 +49,8 @@ This Terraform module automates the creation of a VPC infrastructure following a
 3. Initialize Terraform:
    ```bash
    terraform init
+   terraform plan
 
-
-terraform apply
-
-## Project Structure
-.
-├── main.tf                  # Main Terraform configuration
-├── variables.tf             # Input variables definition
-├── outputs.tf               # Output variables definition
-├── README.md                # Project documentation
 
 ## Author
 Paras-31
