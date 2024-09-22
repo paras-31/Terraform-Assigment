@@ -28,7 +28,7 @@ This Terraform module automates the creation of a VPC infrastructure following a
 | `vpc_id`         | The ID of the created VPC            |
 | `public_subnets` | List of public subnet IDs            |
 | `private_subnets`| List of private subnet IDs           |
-| `nat_gw_id`      | NAT Gateway ID (if enabled)          |
+| `nat_gw_id`      | NAT Gateway ID                       |
 | `igw_id`         | Internet Gateway ID                 |
 | `tgw_id`         | Transit Gateway ID (if enabled)      |
 
@@ -38,7 +38,7 @@ This Terraform module automates the creation of a VPC infrastructure following a
 - Public Subnets
 - Private Subnets
 - Internet Gateway (IGW)
-- NAT Gateway (Optional)
+- NAT Gateway
 - Transit Gateway (Optional)
 - Route Tables for public and private subnets
 
